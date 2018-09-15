@@ -23,13 +23,17 @@ then run the next commands:
 
 examples for try the service using curl:
 
-1.Load a file in given google drive path
+1.Load a file in given google drive path:
 
 
   curl -i -X POST -H 'Content-Type: application/json' -d '{"media_path": "/home/miguel/Pictures/Wallpapers/spacex.jpg", "drive_path": "my_first_upload/sub1/sub2_1", "file_name":"spacex.jpg"}' http://localhost:5000/drive_service
 
-2.Get the url file by id
+2.Get the url file by id:
+
+
   curl http://localhost:5000/drive_service?id=2
 
-3.list all the file in the drive with url_for
+3.List all the file in the drive with url:
+
+
   curl http://localhost:5000/drive_service?id=2
